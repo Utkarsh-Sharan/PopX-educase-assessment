@@ -1,16 +1,54 @@
-# React + Vite
+# PopX 🎨
+A frontend project built with React, Material UI, and TailwindCSS. This project was created as part of a company assignment and is not functional it only demonstrates UI design and page structure.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tools & Technologies
+- React – Component-based UI development
+- Material UI (MUI) – Prebuilt UI components
+- TailwindCSS – Utility-first CSS styling
 
-Currently, two official plugins are available:
+## 📄 Pages Overview
+### 🔹 Landing Page
+Header and introductory paragraph
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Login and Signup buttons
 
-## React Compiler
+### 🔹 Signup Page
+- Header
+- Signup form with inputs:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Full Name
 
-## Expanding the ESLint configuration
+Email
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Phone Number
+
+Password
+- Create Account button
+
+### 🔹 Login Page
+- Header and paragraph
+- Login form with inputs:
+
+Email
+
+Password
+- Login button
+
+### 🔹 Profile Page
+- Navbar
+- Profile picture
+- User details:
+
+Full Name
+
+Email
+
+- Short description/paragraph
+
+## 📦 Installation & Setup
+Clone the repository and install dependencies:
+```
+git clone https://github.com/Utkarsh-Sharan/Popx-educase-assessment.git
+npm install
+npm run dev
+```
