@@ -5,7 +5,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleClick = (e) => {
-    navigate(e.target.id);
+    navigate(`/${e.target.id}`);
   }
 
   return (
