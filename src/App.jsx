@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <section className="h-screen w-60 flex flex-col gap-5 p-2">
+    <section className="relative h-screen w-60 flex flex-col gap-5 p-2 bg-gray-100">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
