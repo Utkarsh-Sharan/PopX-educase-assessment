@@ -8,41 +8,31 @@ A frontend project built with React, Material UI, and TailwindCSS. This project 
 
 ## 📄 Pages Overview
 ### 🔹 Landing Page
-Header and introductory paragraph
-
-Login and Signup buttons
+- Header and introductory paragraph
+- Login and Signup buttons
 
 ### 🔹 Signup Page
 - Header
 - Signup form with inputs:
-
-Full Name
-
-Email
-
-Phone Number
-
-Password
+  - Full Name
+  - Email
+  - Phone Number
+  - Password
 - Create Account button
 
 ### 🔹 Login Page
 - Header and paragraph
 - Login form with inputs:
-
-Email
-
-Password
+  - Email
+  - Password
 - Login button
 
 ### 🔹 Profile Page
 - Navbar
 - Profile picture
 - User details:
-
-Full Name
-
-Email
-
+  - Full Name
+  - Email
 - Short description/paragraph
 
 ## 📦 Installation & Setup
