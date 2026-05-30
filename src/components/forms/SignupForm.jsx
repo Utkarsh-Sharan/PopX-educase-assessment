@@ -26,6 +26,7 @@ const SignupForm = () => {
     <form className='h-full flex flex-col justify-between'>
         <div className='flex flex-col gap-5'>
             <TextField
+                required
                 label="Full Name"
                 placeholder='Enter full name'
                 size='small'
@@ -34,6 +35,7 @@ const SignupForm = () => {
                 onChange={handleChange}
             />
             <TextField
+                required
                 label="Phone number"
                 placeholder='Enter phone number'
                 size='small'
@@ -42,6 +44,7 @@ const SignupForm = () => {
                 onChange={handleChange}
             />
             <TextField
+                required
                 label="Email address"
                 placeholder='Enter email address'
                 size='small'
@@ -50,6 +53,7 @@ const SignupForm = () => {
                 onChange={handleChange}
             />
             <TextField
+                required
                 label="Password"
                 placeholder='Enter password'
                 size='small'
@@ -65,7 +69,7 @@ const SignupForm = () => {
                 value={formData.companyName}
                 onChange={handleChange}
             />
-            <FormLabel>Are you an agency?</FormLabel>
+            <FormLabel required>Are you an agency?</FormLabel>
             <RadioGroup row>
                 <FormControlLabel value={"Yes"} control={<Radio />} label="Yes" />
                 <FormControlLabel value={"No"} control={<Radio />} label="No" />
