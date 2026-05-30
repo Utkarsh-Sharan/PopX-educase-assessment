@@ -16,7 +16,7 @@ const LoginForm = () => {
     <form className='flex flex-col gap-5'>
         <TextField 
             label="Email Address" 
-            defaultValue="Enter email address"
+            placeholder="Enter email address"
             size='small'
             name='email'
             value={formData.email}
@@ -24,12 +24,12 @@ const LoginForm = () => {
         />
 
         <TextField  
-            label="Password" 
-            defaultValue="Enter password"
-            size="small"
-            name='password'
-            value={formData.password}
-            onChange={handleChange}
+          label="Password" 
+          placeholder="Enter password"
+          size="small"
+          name='password'
+          value={formData.password}
+          onChange={handleChange}
         />
 
         <Button bgColor={"bg-purple-700"}>Login</Button>
