@@ -1,6 +1,7 @@
 import { FormControlLabel, FormLabel, Radio, RadioGroup, TextField } from '@mui/material';
 import { useState } from 'react';
 import Button from '../Button';
+import { useNavigate } from 'react-router-dom';
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
@@ -11,8 +12,14 @@ const SignupForm = () => {
     companyName: "",
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     setFormData((prev) => ({...prev, [e.target.name]: e.target.value}));
+  }
+
+  const handleSubmit = (e) => {
+    navigate(`/${e.target.id}`);
   }
 
   return (
@@ -65,7 +72,13 @@ const SignupForm = () => {
             </RadioGroup>
         </div>
 
-        <Button bgColor={"bg-purple-700"}>Create Account</Button>
+        <Button 
+            id={"profile"} 
+            bgColor={"bg-purple-700"}
+            onClick={handleSubmit}
+        >
+            Create Account
+        </Button>
     </form>
   )
 }

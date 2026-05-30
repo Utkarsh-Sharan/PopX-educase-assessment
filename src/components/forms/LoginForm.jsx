@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { TextField } from '@mui/material';
 import Button from '../Button';
+import { useNavigate } from 'react-router-dom';
 
 const LoginForm = () => {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     email: "",
     password: ""
@@ -10,6 +13,10 @@ const LoginForm = () => {
 
   const handleChange = (e) => {
     setFormData((prev) => ({...prev, [e.target.name]: e.target.value}));
+  }
+
+  const handleSubmit = (e) => {
+    navigate(`/${e.target.id}`);
   }
 
   return (
@@ -32,7 +39,13 @@ const LoginForm = () => {
           onChange={handleChange}
         />
 
-        <Button bgColor={"bg-purple-700"}>Login</Button>
+        <Button 
+          id={"profile"} 
+          bgColor={"bg-purple-700"}
+          onClick={handleSubmit}
+        >
+          Login
+        </Button>
     </form>
   )
 }
