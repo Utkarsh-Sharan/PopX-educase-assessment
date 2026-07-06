@@ -1,8 +1,8 @@
-const Button = ({children, id, bgColor, onClick}) => {
+const Button = ({children, id, bgColor, color, onClick}) => {
   return (
     <button 
       id={id} 
-      className={`${bgColor} rounded-md w-full py-2`} 
+      className={`${bgColor} ${color ? color : ""} rounded-md w-full py-2`} 
       onClick={onClick}
       type="button"
     >
